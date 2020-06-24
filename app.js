@@ -5,4 +5,8 @@ app.get('/', (req, res) => {
   res.render('hello.ejs');
 });
 
-app.listen(3002);
+app.get('/top',(req, res) => {
+  res.render('top.ejs');
+});
+
+app.listen(3001);
