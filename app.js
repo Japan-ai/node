@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/top', (req, res) => {
+app.get('/', (req, res) => {
   res.render('top.ejs');
 });
 
@@ -11,4 +11,4 @@ app.get('/index',(req, res) => {
   res.render('index.ejs');
 });
 
-app.listen(3001);
+app.listen(3003);
